@@ -24,7 +24,6 @@ public class SpeakersController {
     public Speaker get(@PathVariable Long id) {
         return speakerRepository.getReferenceById(id);
     }
-
     @PostMapping
     public Speaker create(@RequestBody Speaker speaker){
         return speakerRepository.saveAndFlush(speaker);
